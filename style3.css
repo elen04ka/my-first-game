@@ -1,0 +1,143 @@
+/* Базові стилі */
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    background: #0d0d0d;
+    color: #e5e5e5;
+    line-height: 1.6;
+  }
+  
+  /* Hero */
+  header.hero {
+    background: linear-gradient(135deg, #7c3aed, #ec4899);
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+    box-shadow: 0 0 20px rgba(236, 72, 153, 0.5);
+  }
+  
+  header.hero h1 {
+    margin: 0;
+    font-size: 3rem;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+  }
+  
+  header.hero p {
+    margin: 0.5rem 0 1.5rem;
+    font-size: 1.2rem;
+  }
+  
+  header.hero .btn {
+    background: white;
+    color: #7c3aed;
+  }
+  
+  /* Контейнер */
+  .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 2rem 0;
+  }
+  
+  /* Заголовки секцій */
+  h2 {
+    margin-bottom: 1rem;
+    color: #ec4899;
+    border-left: 4px double #7c3aed;
+    padding-left: 0.5rem;
+    text-shadow: 0 0 8px rgba(124, 58, 237, 0.7);
+  }
+  
+  /* Списки */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    background: rgba(124, 58, 237, 0.1);
+    border-left: 4px solid #ec4899;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 10px;
+  }
+  
+  /* Сітка */
+  .grid {
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  @media(min-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .grid img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(236, 72, 153, 0.4);
+  }
+  
+  /* Картки */
+  .card {
+    background: #1a1a1a;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid rgba(124, 58, 237, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 0 15px rgba(124, 58, 237, 0.6);
+  }
+  
+  .card h3 {
+    margin: 0.5rem 0;
+    color: #fff;
+  }
+  
+  /* Завантаження */
+  .download {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(124, 58, 237, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(124, 58, 237, 0.3);
+  }
+  
+  .download h2 {
+    color: #ec4899;
+  }
+  
+  /* Кнопка */
+  .btn {
+    display: inline-block;
+    background: #7c3aed;
+    color: white;
+    padding: 0.7rem 1.3rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .btn:hover {
+    background: #ec4899;
+    box-shadow: 0 0 12px rgba(236, 72, 153, 0.7);
+  }
+  
+  /* Футер */
+  footer {
+    text-align: center;
+    background: #111;
+    color: #999;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    border-top: 1px solid #222;
+  }
+  
